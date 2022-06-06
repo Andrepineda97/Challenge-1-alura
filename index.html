@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Challenge-1</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <img class="logo-alura" src="img/Trifuerza.svg.png" alt="Logo alura">
+        <textarea cols="42" rows="13" class="input-box textarea-style" placeholder="Ingrese el texto aqui" id="texto-in"></textarea>
+        <img src="img/navy.png" alt="informacion" class="information">
+        <p>Solo letras minúsculas y sin acentos</p>
+        <div>
+            <input type="button" value="Encriptar" class="button-1" onclick="encrypt()"> 
+            <input type="button" value="Desencriptar" class="button-2" onclick="decrypt()">
+        </div>
+    </div>
+    <div class="img-sin-resultados">
+        <div class="box-button-copy" id="box-text-mostrar" style="display: none;">
+            <br>
+            <textarea cols="30" rows="10" class="textarea-style-2" id="texto_out" readonly></textarea>
+        </div>
+        <div>
+            <img id="imagen-mostrar" name="imagen-mostrar" src="img/link.jpg" alt="Sin-resultados" class="imagen-2">
+            <img src="img/cofre cerrado.png" alt="cofre cerrado" id="cofre-cerrado" style="display: none; width: 65%; transform: translate(52px, -15em);"> 
+            <img src="img/cofre abierto.png" alt="cofre abierto" id="cofre-abierto" style="display:none; width: 65%; transform: translate(52px, -15em);">
+        </div>
+        <div id="text-miss">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <br>
+        </div>
+        <div class="box-button-copy" id="button-show-copy" style="display: none;">
+            <button value="Copiar" class="button-3" onclick="copyText()">Copiar</button>
+        </div>
+    </div>
+    <script src="js/logica.js"></script>
+</body>
+
+</html>
